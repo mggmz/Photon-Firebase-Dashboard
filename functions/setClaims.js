@@ -1,4 +1,7 @@
-
+/**
+ * Uso: npm run set-admin -- <uid>
+ * Asigna customClaim {role:"admin"} al usuario indicado.
+ */
 const admin = require("firebase-admin");
 admin.initializeApp();
 
