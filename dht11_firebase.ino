@@ -1,7 +1,7 @@
 /******************************************************************************
  *  Archivo   : dht11_firebase.ino
  *  Propósito : Publicar lecturas del DHT11 y controlar un relé vía nube
- *  Autor     : [Tu nombre]
+ *  Autor     : [Casillas Sánchez Ramón D. & García Gámez Marco A.]
  *  Versión   : 1.0
  ******************************************************************************/
 
