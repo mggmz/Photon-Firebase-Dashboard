@@ -1,0 +1,20 @@
+// Reglas v2
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{db}/documents {
+    function isAdmin() { return request.auth.token.role == 'admin'; }
+
+    match /devices/{deviceId} {
+      function isOwner() {
+        return request.auth != null && request.auth.uid == resource.data.ownerUid;
+      }
+      allow read, update: if isAdmin() || isOwner();
+      allow create, delete: if isAdmin();
+
+      match /readings/{id} {
+        allow read: if isAdmin() || isOwner();
+        allow write: if false;
+      }
+    }
+  }
+}
