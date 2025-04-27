@@ -149,4 +149,4 @@ Open the Hosting URL → sign up two test users and watch device ownership trans
 ## 🖋 License
 Released under the **MIT License** – feel free to use, modify and share.  
 
-Happy Semana Santa! ✝️
+Happy Semana Santa! ✝️.
